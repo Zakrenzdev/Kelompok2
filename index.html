@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let's Study About Limbah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="Acorn-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Dialog Awal -->
+  <div class="intro-dialog" id="introDialog">
+    <div class="dialog-content">
+      <h2>Nama Kelompok 2</h2>
+      <p>
+       <strong>Kelas X - 6 MAN 1 INDRAMAYU.</strong>
+      </p>
+      <ul>
+        <li>Khalishah Anindita F</li>
+        <li>Lembayung Sekar A</li>
+        <li>Syifa Humaira</li>
+        <li>Sri Yanti</li>
+        <li>Budi Ardiansyah</li>
+        <li>Ridhwan Zakki</li>
+      </ul>
+      <button onclick="closeDialog()">Mulai Belajar</button>
+    </div>
+  </div>
+
+  <main>
+    <h1 class="title">Let's Study About Limbah</h1>
+
+    <section class="card slide fade-slide">
+      <h2><i class="fas fa-recycle"></i> Perbedaan Limbah Organik & Anorganik</h2>
+      <p>
+        Limbah <strong>organik</strong> berasal dari sisa makhluk hidup dan mudah terurai, sedangkan
+        <strong>anorganik</strong> berasal dari bahan kimia atau buatan manusia dan sulit terurai.
+      </p>
+    </section>
+
+    <section class="card slide fade-slide">
+      <h2><i class="fas fa-leaf"></i> Contoh Limbah Organik & Anorganik</h2>
+      <ul>
+        <li><strong>Organik:</strong> Sisa makanan, daun kering, buah-buahan</li>
+        <li><strong>Anorganik:</strong> Plastik, kaleng, botol kaca</li>
+      </ul>
+    </section>
+
+<img src="gambar1.jpg" alt="Contoh Limbah Organik" style="width:100%; border-radius:10px; margin-top:1rem;">
+
+    <section class="card slide fade-slide">
+      <h2><i class="fas fa-skull-crossbones"></i> Dampak Jika Tidak Dikelola</h2>
+      <p>
+        Limbah dapat mencemari lingkungan, menyebabkan banjir, merusak habitat, dan mengganggu kesehatan.
+      </p>
+    </section>
+
+    <section class="card slide fade-slide">
+      <h2><i class="fas fa-lightbulb"></i> Solusi Sederhana</h2>
+      <ul>
+        <li>Gunakan prinsip 3R (Reduce, Reuse, Recycle)</li>
+        <li>Kompos dari limbah organik</li>
+        <li>Pilah sampah sejak dari rumah</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    function closeDialog() {
+      const dialog = document.getElementById("introDialog");
+      dialog.classList.add("hide");
+      setTimeout(() => dialog.remove(), 600);
+    }
+  </script>
+</body>
+</html>
